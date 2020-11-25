@@ -14,7 +14,7 @@ namespace ProductReviewManagementWithLinq
         public readonly DataTable dataTable = new DataTable();
 
         /// <summary>
-        /// UC 2 
+        /// 
         /// Tops the records.
         /// </summary>
         /// <param name="listReview">The list review.</param>
@@ -26,6 +26,13 @@ namespace ProductReviewManagementWithLinq
             var recordedData = (from productReviews in listReview
                                  orderby productReviews.Rating descending
                                  select productReviews).Take(3);
+
+            Console.WriteLine("\nTop 3 high rated products are:");
+
+            foreach (var v in recordedData)
+            {
+                Console.WriteLine($"ProductID:{v.ProductID}\tUserID:{v.UserID}\tRating:{v.Rating}\tReview:{v.Review}\tIsLike:{v.isLike}");
+            }
         }
     }
 }

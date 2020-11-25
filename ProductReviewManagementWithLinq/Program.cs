@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ProductReviewManagementWithLinq
 {
@@ -11,6 +13,8 @@ namespace ProductReviewManagementWithLinq
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, Welcome to Product review management!");
+
+            List<ProductReview> productReviewList = new List<ProductReview>();
         }
     }
 }

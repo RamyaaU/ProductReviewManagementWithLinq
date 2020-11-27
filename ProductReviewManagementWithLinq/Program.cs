@@ -87,7 +87,7 @@ namespace ProductReviewManagementWithLinq
 
             //UC10
             //Retrieve all records and find average for each product
-            ProductReviewDataTable.FindAverageRatingForEachProductId();
+            //ProductReviewDataTable.FindAverageRatingForEachProductId();
 
             //UC11
             //Retrieve all records from list whose review message contains nice

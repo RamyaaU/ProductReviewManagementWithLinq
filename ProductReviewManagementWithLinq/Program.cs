@@ -77,9 +77,9 @@ namespace ProductReviewManagementWithLinq
             //Retrieveonlyproductid
             //management.RetrieveOnlyProductIDAndReviewOfAllRecordsUsingSelect(productReviewList);
 
-            //UC8
-            //creating data table
-            management.AddToDataTable(productReviewList);
+            //UC 8
+            //Created data table
+            ProductReviewDataTable.AddDataIntoDataTable();
         }
     }
 }

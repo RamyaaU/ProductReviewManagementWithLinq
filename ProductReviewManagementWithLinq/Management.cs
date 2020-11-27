@@ -132,26 +132,7 @@ namespace ProductReviewManagementWithLinq
                 Console.WriteLine($"ProductID:{v.ProductId},ReviewCount:{v.Review}");
             }
         }
-
-        /// <summary>
-        /// UC8
-        /// Adds to data table.
-        /// </summary>
-        /// <param name="listProductReviews">The list product reviews.</param>
-        /// <returns></returns>
-        public DataTable AddToDataTable(List<ProductReview> listProductReviews)
-        {
-            DataTable table = new DataTable();
-            table.Columns.Add("ProductId", typeof(int));
-            table.Columns.Add("UserId", typeof(int));
-            table.Columns.Add("Rating", typeof(double));
-            table.Columns.Add("Review", typeof(string));
-            table.Columns.Add("IsLike", typeof(bool));
-            foreach (ProductReview product in listProductReviews)
-            {
-                table.Rows.Add(product.ProductID, product.UserID, product.Rating, product.Review, product.isLike);
-            }
-            return table;
-        }
     }
 }
+
+     
